@@ -21,7 +21,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(65, 105, 225, 0.7);
+    background-color: rgba(65, 105, 225, 0.9);
     padding: 0 1.5rem;
 }
 
@@ -59,4 +59,35 @@ section.left_side .links a {
 .icon img {
     width: 1.5rem;
     padding: 0.2rem;
+}
+
+main {
+   width: 90%;
+   margin: 3rem auto;
+}
+
+section.basics {
+    border: solid 3px lightblue;
+    display: flex;
+    align-items: center;
+}
+
+section.basics figure, section.basics .description {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0.25em;
+}
+section.basics img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+section.basics hr {
+    
+    background: rgba(65, 105, 225, 0.4);
+    /* can we skip the height? */
+    width: 0.8%;
+    height: 20rem;
+    border-width: 0;
 }
