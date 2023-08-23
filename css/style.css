@@ -63,31 +63,35 @@ section.left_side .links a {
 
 main {
    width: 90%;
-   margin: 3rem auto;
+   margin: 4rem auto;
+   display: flex;
+   justify-content: center;
 }
 
-section.basics {
-    border: solid 3px lightblue;
-    display: flex;
-    align-items: center;
+section.welcome {
+    width: 80%;
+    display: flex;   
 }
 
-section.basics figure, section.basics .description {
+section.welcome img {
     width: 45%;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 0.25em;
-}
-section.basics img {
-    width: 100%;
     border-radius: 50%;
 }
 
-section.basics hr {
-    
+section.welcome hr {
     background: rgba(65, 105, 225, 0.4);
     /* can we skip the height? */
-    width: 0.8%;
-    height: 20rem;
+    width: 0.4%;
+    height: 31em;
     border-width: 0;
 }
+
+section.welcome .description {
+    width: 40%;
+    z-index: 1;
+}
+
+.description h1 {
+    font-size: 3em;
+}
+
