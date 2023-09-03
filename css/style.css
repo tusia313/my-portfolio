@@ -36,7 +36,6 @@ section.left_side .logo {
     align-items: center;
     font-size: 1.2em;
     text-transform: uppercase;
-    font-weight: 100;
 }
 
 section.left_side .logo img {
@@ -68,13 +67,14 @@ section.welcome {
     /* margin: 5rem auto; */
     display: flex;
     align-items: center;
-    padding-right: 8rem; 
+    padding-right: 8rem;
+    font-size: 1.1em; 
 }
 
 section.welcome figure {
     text-align: right;
     margin: 0 auto;
-    padding: 2rem 3rem 0 0;
+    padding: 0rem 3rem 0 0;
  }
 section.welcome img {
     width: 60%;
@@ -100,7 +100,7 @@ section.welcome .description {
 
 aside.socials {
     background-color: lightblue;
-    position: absolute;
+    position: fixed;
     top: 40vh;
     right: 0;
     display: flex;
@@ -114,18 +114,21 @@ section.works {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 3rem 0;
 }
 
 section.works .project_HTML {
     border-top: 0.5rem solid rgba(65, 105, 225, 0.4);
     background-color: rgba(173, 216, 230, 0.7);
+    /* box-shadow: inset 0 0.3em 0.8em rgba(225, 225, 225, 0.5),
+     0 0 0.3em rgb(173, 216, 230); */
     width: 25%;
     padding: 1rem 2rem 3rem 2rem;
     margin: 1rem 1rem;;
 }
 
 section.works .project_CSS {
-    border-top: 0.5rem solid orange;
+    border-top: 0.5rem solid gold;
     background-color: rgba(173, 216, 230, 0.7);
     width: 25%;
     padding: 1rem 2rem 3rem 2rem;
@@ -151,6 +154,36 @@ footer {
     padding: 2rem 3rem;
     text-align: right;
     font-weight: lighter;
+}
+
+section.motivation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(154, 205, 50, 0.5);
+    padding: 5rem 1rem;
+}
+section.motivation .quote {
+    width: 80%;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+section.motivation .quote img {
+    width: 70%;
+    border-radius: 50%;
+    border: white solid 0.125em;
+    box-shadow: inset 0 0 0.5em 0 whitesmoke, 
+                0 0 0.5em 0 whitesmoke;
+}
+
+section.motivation .cv {
+    width: 60%;
+    padding: 2rem 3rem;
+}
+
+section.motivation .cv h1 {
+    font-size: 3em;
 }
 
 footer address {
