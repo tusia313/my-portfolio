@@ -3,8 +3,12 @@
 /* Icons came from www.flaticon */
 /* <a href="https://www.flaticon.com/free-icons/twitter" title="twitter icons">Twitter icons created by Pixel perfect - Flaticon</a> */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     /* font-family: 'Libre Bodoni', serif; */
@@ -13,71 +17,75 @@ body {
     color: snow;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+nav {
+    background-color: rgba(65, 105, 225, 0.9);
 }
 
-nav {
+nav .nav-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: rgba(65, 105, 225, 0.9);
-    padding: 0 1.5rem;
 }
 
-section.left_side {
+nav .menu-container, .tech-container {
     display: flex;
     align-items: center;
+    padding: 1.2rem;
 }
 
-section.left_side .logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.2em;
-    text-transform: uppercase;
-}
-
-section.left_side .logo img {
-    width: 5rem;
-    transform: scale(0.6);
+nav .logo {
+    height: 2.4rem;
+    margin: 0 0.7rem 0 0;
     background-color: snow;
     border-radius: 50%;
     padding: 0.2rem;
- 
 }
 
-section.left_side .links {
-    padding-left: 2rem ;
+nav .hamburger {
+    background-color: transparent;
+    color: white;
+    font-size: 1.4em;
+    border: none;
+    margin: 0 0.7rem 0 0;
+}
+
+nav h3 {
+    font-weight: lighter;
     letter-spacing: 0.2em;
+    margin: 0 2rem 0 0;
 }
 
-section.left_side .links a {
-    padding: 0 0.7rem;
+nav .nav-link {
+    color: inherit;
+    text-decoration: none;
+    padding: 0.5rem 0.7rem;
 }
 
-.icon img {
-    width: 1.5rem;
+nav .nav-link:hover {
+    color: peachpuff;
+    font-weight: bold;
+}
+
+nav .tech-container img {
+    height: 1.9rem;
     padding: 0.2rem;
 }
 
+.hidden {
+    display: none !important;
+ }
+
 section.welcome {
     width: 90%;
-    height: 90vh;
-    /* margin: 5rem auto; */
+    height: 80vh;
     display: flex;
     align-items: center;
-    padding-right: 8rem;
+    justify-content: center;
     font-size: 1.1em; 
 }
 
-section.welcome figure {
-    text-align: right;
-    margin: 0 auto;
-    padding: 0rem 3rem 0 0;
- }
 section.welcome img {
-    width: 60%;
+    height: 25rem ;
+    /* width: 50%; */
     border-radius: 50%;
 }
 
@@ -89,9 +97,8 @@ section.welcome hr {
 }
 
 section.welcome .description {
-    width: 35%;
-    z-index: 1;
-    padding: 0 4rem;
+    width: 40%;
+    padding: 0 2%;
 }
 
 .description h1 {
@@ -120,8 +127,7 @@ section.works {
 section.works .project_HTML {
     border-top: 0.5rem solid rgba(65, 105, 225, 0.4);
     background-color: rgba(173, 216, 230, 0.7);
-    /* box-shadow: inset 0 0.3em 0.8em rgba(225, 225, 225, 0.5),
-     0 0 0.3em rgb(173, 216, 230); */
+  got  */
     width: 25%;
     padding: 1rem 2rem 3rem 2rem;
     margin: 1rem 1rem;;
