@@ -2,9 +2,15 @@
 
 /* Icons came from www.flaticon */
 /* <a href="https://www.flaticon.com/free-icons/twitter" title="twitter icons">Twitter icons created by Pixel perfect - Flaticon</a> */
+/* Menu symbol is from https://pl.piliapp.com/symbol/menu/ */
 
 html {
     scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 body {
@@ -26,7 +32,8 @@ nav .nav-container {
     justify-content: space-between;
 }
 
-nav .menu-container, .tech-container {
+nav .menu-container,
+.tech-container {
     display: flex;
     align-items: center;
     padding: 1.2rem;
@@ -41,11 +48,7 @@ nav .logo {
 }
 
 nav .hamburger {
-    background-color: transparent;
-    color: white;
-    font-size: 1.4em;
-    border: none;
-    margin: 0 0.7rem 0 0;
+    display: none;
 }
 
 nav h3 {
@@ -61,8 +64,9 @@ nav .nav-link {
 }
 
 nav .nav-link:hover {
-    color: peachpuff;
+    background-color: lightblue ;
     font-weight: bold;
+    border-radius: 0.3rem;
 }
 
 nav .tech-container img {
@@ -70,45 +74,39 @@ nav .tech-container img {
     padding: 0.2rem;
 }
 
+nav .hamburger-list-container .nav-link {
+    display: block;
+}
+
 .hidden {
     display: none !important;
- }
-
-section.welcome {
-    width: 90%;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1em; 
 }
 
-section.welcome img {
-    height: 25rem ;
-    /* width: 50%; */
-    border-radius: 50%;
+@media (max-width: 1000px) {
+    nav h3 {
+        display: none;
+    }
 }
 
-section.welcome hr {
-    background: rgba(65, 105, 225, 0.4);
-    width: 0.4%;
-    height: 25rem;
-    border-width: 0;
-}
-
-section.welcome .description {
-    width: 40%;
-    padding: 0 2%;
-}
-
-.description h1 {
-    font-size: 3em;
+@media only screen and (max-width: 600px) {
+    nav .hamburger {
+        /* overwrite the display : IMPORTANT! */
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 1.4em;
+        border: none;
+        margin: 0 0.7rem 0 0;
+    }
+    .menu-container .nav-links {
+        display: none;
+    }
 }
 
 aside.socials {
     background-color: lightblue;
     position: fixed;
-    top: 40vh;
+    top: 35vh;
     right: 0;
     display: flex;
     flex-direction: column;
@@ -116,50 +114,119 @@ aside.socials {
     border-radius: 10%;
 }
 
-section.works {
+@media (max-width:600px) {
+    aside.socials {
+        display: none;
+    }
+}
+
+section.main-section {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    font-size: 1.1em;
+}
+ .headshoot {
+    width: 25rem;
+    border-radius: 50%;
+    padding: 3rem;
+    margin-left: 10vw;
+}
+
+.introduction {
+    width: 40vw;
+    padding: 2.5rem;
+    border-left: 3px solid whitesmoke;
+    font-size: 1.1em;
+}
+
+.introduction h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    section.main-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+    }
+
+    section.main-section .introduction {
+        width: 90vw;
+        text-align: center;
+        border-left: none;
+    }
+
+    section.main-section .headshoot {
+        margin-left: 0;
+    }
+}
+ /* dużo nowości! */
+.arrow {
+    border: white solid;
+    border-width: 0 8px 8px 0;
+    padding: 1rem;
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+.bounce {
+    padding: 1.5rem 0 0 3rem;
+    animation: bounce 1.5s infinite ease-in-out;
+    
+}
+
+@keyframes bounce {
+    0%
+    20%
+    50%
+    80%
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-25px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }      
+}
+
+section.work-section {
     background-color: rgb(252, 231, 205);
+    padding: 5rem 3rem;
+}
+
+section .work-card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 3rem 0;
 }
 
-section.works .project_HTML {
-    border-top: 0.5rem solid rgba(65, 105, 225, 0.4);
-    background-color: rgba(173, 216, 230, 0.7);
-  got  */
+.work-card {
     width: 25%;
-    padding: 1rem 2rem 3rem 2rem;
-    margin: 1rem 1rem;;
-}
-
-section.works .project_CSS {
-    border-top: 0.5rem solid gold;
     background-color: rgba(173, 216, 230, 0.7);
-    width: 25%;
-    padding: 1rem 2rem 3rem 2rem;
-    margin: 1rem 1rem;;
-}
-section.works .project_JS {
-    /* border-top: 0.5rem solid rgba(255, 255, 0, 0.8); */
-    border-top: 0.5rem solid yellow;
-    background-color: rgba(173, 216, 230, 0.7);
-    width: 25%;
-    padding: 1rem 2rem 3rem 2rem;
-    margin: 1rem 1rem;;
+    margin: 0.6rem;
+    padding: 0 2.5rem 2.5rem 2.5rem;
 }
 
-section.works .language {
-    font-size: 0.6em;
-    font-weight: bold;
-    color: snow;
+.html {
+    border-top: 0.5rem solid orange;
 }
 
-footer {
-    background-color: rgba(65, 105, 225, 0.9) ;
-    padding: 2rem 3rem;
-    text-align: right;
-    font-weight: lighter;
+.css {
+    border-top: 0.5rem solid lightskyblue;
+   
+}
+
+.js {
+    border-top: 0.5rem solid rgba(255, 255, 0, 0.9);
+}
+
+.react {
+    border-top: 0.5rem solid rgba(0, 0, 255, 0.6);
 }
 
 section.motivation {
@@ -169,6 +236,7 @@ section.motivation {
     background-color: rgba(154, 205, 50, 0.5);
     padding: 5rem 1rem;
 }
+
 section.motivation .quote {
     width: 80%;
     text-align: right;
@@ -179,8 +247,8 @@ section.motivation .quote img {
     width: 70%;
     border-radius: 50%;
     border: white solid 0.125em;
-    box-shadow: inset 0 0 0.5em 0 whitesmoke, 
-                0 0 0.5em 0 whitesmoke;
+    box-shadow: inset 0 0 0.5em 0 whitesmoke,
+        0 0 0.5em 0 whitesmoke;
 }
 
 section.motivation .cv {
@@ -192,11 +260,17 @@ section.motivation .cv h1 {
     font-size: 3em;
 }
 
+footer {
+    background-color: rgba(65, 105, 225, 0.9);
+    padding: 2rem 3rem;
+    text-align: right;
+    font-weight: lighter;
+}
+
 footer address {
     font-style: normal;
 }
 
-footer address a{
+footer address a {
     font-weight: bold;
 }
-

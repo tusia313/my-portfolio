@@ -19,7 +19,7 @@
                 <button class="hamburger">☰</button>
                 <h3>MARTA ŁOSKOT</h3>
                 <div class="nav-links">
-                    <a href="#" class="nav-link">Works</a>
+                    <a href="#work" class="nav-link">Works</a>
                     <a href="pages/about-me.html" class="nav-link">About</a>
                     <a href="pages/contact.html" class="nav-link">Contact</a>
                 </div>
@@ -32,100 +32,11 @@
             </div>
         </div>
         <div class="hamburger-list-container hidden">
-            <a href="#" class="nav-link">Works</a>
+            <a href="#work" class="nav-link">Works</a>
             <a href="pages/about-me.html" class="nav-link">About</a>
             <a href="pages/contact.html" class="nav-link">Contact</a>
         </div>
     </nav>
-
-    <main>
-        <section class="welcome">
-            
-                <img src="images/1.jpg" alt="Marta Łoskot picture">
-            
-            <!-- <hr /> -->
-            <div class="description">
-                <h1>Welcome! <br /> I'm Marta</h1>
-                <p>and <strong>I love my life</strong>. </p>
-                <p>Currently, i am self-taught Junior Frontend Developer, certified engineer and completely baking
-                    lover.
-                </p>
-                <p>Below I collect my humble projects. I put a lot of work, time and heart into these. </br> Hope You
-                    enjoy it!</p>
-            </div>
-        </section>
-        <section class="works">
-            <div class="project_HTML">
-                <p class="language">HTML</p>
-                <h2>Table Tennis Leaderboard</h2>
-                <p>An excersise in HTML learnig how to use elements and create things such as table.</p>
-            </div>
-            <div class="project_HTML">
-                <p class="language">HTML</p>
-                <h2>Profile Card</h2>
-                <p>An excersise in HTML in order to create a Profile Card for myself.</p>
-            </div>
-            <div class="project_CSS">
-                <p class="language">HTML, CSS</p>
-                <h2>Martha's Menu</h2>
-                <p>In this page I create a menu for my dream cafe, but the point was to utilise my CSS knowledge.</p>
-            </div>
-            <div class="project_JS">
-                <p class="language">HTML, CSS, JS</p>
-                <h2>Falling Hearts</h2>
-                <p>Creating a page of falling hearts, using a JAvaScript Classes. Each heart has a diffrent speed, color
-                    and position.</p>
-            </div>
-            <div class="project_JS">
-                <p class="language">HTML, CSS, JS</p>
-                <h2>Unit Converter</h2>
-                <p>I made an app that convert all types of temperatures. I do this with drop-down as well as inputs.</p>
-            </div>
-            <div class="project_JS">
-                <p class="language">HTML, CSS, JS</p>
-                <h2>Pomodoro Time</h2>
-                <p>I create this to count down each task and delete the task once it runs out of time.</p>
-            </div>
-            <div class="project_HTML">
-                <p class="language">HTML</p>
-                <h2>Wikipedia clone</h2>
-                <p>In this exercise I create i practise page structure by creating a clone of the Wikipedia page.</p>
-            </div>
-            <div class="project_CSS">
-                <p class="language">HTML, CSS</p>
-                <h2>Photo Carousel</h2>
-                <p>Here I create a simple, but lovely Photo Carousel that shows a bunch of pictures. The CAKE pictures
-                    of course.</p>
-            </div>
-            <div class="project_JS">
-                <p class="language">HTML, CSS, JS</p>
-                <h2>Calculator</h2>
-                <p>As an engineer (by profession) I finally create a fully funcional JavaScript calculator. In this very
-                    common project, I make use of varoius JS methods.</p>
-            </div>
-        </section>
-        <section class="motivation">
-            <div class="quote">
-                <!-- or i just put here my picture? -->
-                <img src="images/3.jpg" alt="Me with cake">
-            </div>
-            <div class="cv">
-                <h1>Why I do what I do. </h1>
-                <p>Since I've remembered I always liked math. Numbers. Calculation.
-                    During my study I discovered another passion: <b>baking</b>. 🎂
-                    And I completely lost my head for this.</p>
-                <p>Trying to combine these two passions - as a constructor (by profession) I wasn't happy being
-                    surrounded by tons of concreat and steel (great materials,to be sure, but...), when my dear friend
-                    show me the wealth of colors and possibilities of the web world.
-                    And I lost my head. Again. Because You know : (...)</p>
-                <p>Lucky me, I have a great support of my beloved friends from the IT, taking my knowledge especially
-                    from <a href="#">Ania Kubow course</a> On October 2023 I start my studies at the
-                    Silesian University of Technology in the field of - attention, attention please! - programming. So I
-                    take it very seriously (job, not my study ;).
-                </p>
-            </div>
-        </section>
-    </main>
 
     <aside class="socials">
         <a href="https://twitter.com/MartaLoskot" target="_blank">
@@ -138,6 +49,126 @@
             <i class="icon-github-circled"></i>
         </a>
     </aside>
+
+    <section class="main-section">
+        <img class="headshoot" src="images/1.jpg" alt="Marta Łoskot picture">
+
+        <div class="introduction">
+            <h1>Welcome! <br /> I'm Marta</h1>
+            <p>and <strong>I love my life</strong>. </p>
+            <p>Currently, i am self-taught Junior Frontend Developer, certified engineer and completely baking
+                lover.
+            </p>
+            <p>Below I collect my humble projects. I put a lot of work, time and heart into these. </br> Hope You
+                enjoy it!</p>
+            <div class="bounce"><i class="arrow"></i></div>
+        </div>
+    </section>
+
+    <section class="work-section" id="work">
+        <div class="work-card-container">
+            <div class="work-card html">
+                <h5>HTML</h5>
+                <a href="https://github.com/tusia313/html-table_tennis/tree/main">
+                    <h2>Table Tennis Leaderboard</h2>
+                </a>
+                <p>An excersise in HTML learnig how to use elements and create things such as table.</p>
+            </div>
+            <div class="work-card html">
+                <h5>HTML, CSS</h5>
+                <a href="https://github.com/tusia313/css-profile-badge">
+                    <h2>Profile Card</h2>
+                </a>
+                <p>An excersise in HTML and CSS in order to create a Profile Card for myself.</p>
+            </div>
+            <div class="work-card css">
+                <h5>HTML, CSS</h5>
+                <a href="https://github.com/tusia313/css-menu">
+                    <h2>Martha's Menu</h2>
+                </a>
+                <p>In this page I create a menu for my dream cafe, but the point was to utilise my CSS knowledge.</p>
+            </div>
+            <div class="work-card js">
+                <h5>HTML, CSS, JS</h5>
+                <a href="#">
+                    <h2>Falling Hearts</h2>
+                </a>
+                <p>Creating a page of falling hearts, using a JAvaScript Classes. Each heart has a diffrent speed, color
+                    and position.</p>
+            </div>
+            <div class="work-card js">
+                <h5>HTML, CSS, JS</h5>
+                <a href="#">
+                    <h2>Unit Converter</h2>
+                </a>
+                <p>I made an app that convert all types of temperatures. I do this with drop-down as well as inputs.</p>
+            </div>
+            <div class="work-card js">
+                <h5>HTML, CSS, JS</h5>
+                <a href="#">
+                    <h2>Pomodoro Time</h2>
+                </a>
+                <p>I create this to count down each task and delete the task once it runs out of time.</p>
+            </div>
+            <div class="work-card css">
+                <h5>HTML, CSS</h5>
+                <a href="https://github.com/tusia313/-css-signup-form">
+                    <h2>Signup form</h2>
+                </a>
+                <p>Beatiful page mostly focus on forms and taking fun from a wealth of CSS features.</p>
+            </div>
+            <div class="work-card js">
+                <h5>HTML, CSS, JS</h5>
+                <a href="#">
+                    <h2>Calculator</h2>
+                </a>
+                <p>As an engineer (by profession) I finally create a fully funcional JavaScript calculator. In this very common project, I make use of varoius JS methods.</p>
+            </div>
+            <div class="work-card react">
+                <h5>HTML, CSS, JS, React</h5>
+                <a href="#">
+                    <h2>Travel App</h2>
+                </a>
+                <p>I create a fully functional Travel App with authentication for users so they can add, update, edit and delete their own travel destinations.</p>
+            </div>
+            <!-- <div class="project_HTML">
+                <p class="language">HTML</p>
+                <h2>Wikipedia clone</h2>
+                <p>In this exercise I create i practise page structure by creating a clone of the Wikipedia page.</p>
+            </div>
+            <div class="project_CSS">
+                <p class="language">HTML, CSS</p>
+                <h2>Photo Carousel</h2>
+                <p>Here I create a simple, but lovely Photo Carousel that shows a bunch of pictures. The CAKE pictures
+                    of course.</p>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="motivation">
+        <div class="quote">
+            <!-- or i just put here my picture? -->
+            <img src="images/3.jpg" alt="Me with cake">
+        </div>
+        <div class="cv">
+            <h1>Why I do what I do. </h1>
+            <p>Since I've remembered I always liked math. Numbers. Calculation.
+                During my study I discovered another passion: <b>baking</b>. 🎂
+                And I completely lost my head for this.</p>
+            <p>Trying to combine these two passions - as a constructor (by profession) I wasn't happy being
+                surrounded by tons of concreat and steel (great materials,to be sure, but...), when my dear friend
+                show me the wealth of colors and possibilities of the web world.
+                And I lost my head. Again. Because You know : creating a webpage is so similar to baking! You need to
+                have an equipment (laptop, Termomix - whatever), skills (which are constantly developing), good recipe
+                (or idea/inspiration), PATIENCE (a lot and more!), humility (that not everything will go as you planned)
+                and sense of beaty. </p>
+            <p>Lucky me, I have a great support of my beloved friends from the IT and taking my knowledge especially
+                from <a href="#">Ania Kubow course</a> On October 2023 I start my studies at the
+                Silesian University of Technology in the field of - attention, attention please! - programming. So I
+                take it very seriously (job, not my study ;).
+            </p>
+        </div>
+    </section>
 
     <footer>
 
