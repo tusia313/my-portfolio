@@ -116,7 +116,7 @@ aside.socials {
     right: 0;
     display: flex;
     flex-direction: column;
-    padding: 0.3rem;
+    padding: 0.1rem;
     border-radius: 10%;
 }
 
@@ -132,41 +132,20 @@ section.main-section {
     align-items: center;
     font-size: 1.1em;
 }
-
 .headshoot {
-    width: 25rem;
+    width: 24rem;
     border-radius: 50%;
     padding: 3rem;
     margin-left: 10vw;
 }
 
-.introduction {
+section.main-section .introduction {
     width: 40vw;
     padding: 2.5rem;
     border-left: 3px solid whitesmoke;
     font-size: 1.1em;
 }
 
-@media screen and (max-width: 1000px) {
-    .main-section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .introduction {
-        width: 90vw;
-
-        border-left: none;
-        text-align: center;
-        z-index: 1;
-    }
-
-    .headshot {
-        margin-left: 0;
-    }
-
-}
 
 /* dużo nowości! */
 .arrow {
@@ -181,6 +160,30 @@ section.main-section {
     padding: 1.5rem 0 0 3rem;
     animation: bounce 1s infinite ease-in-out;
 
+}
+@media screen and (max-width: 1000px) {
+    .main-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 12rem;
+    }
+
+    section.main-section .introduction {
+        border-left: none;
+        text-align: center;
+        width: 90vw;
+        z-index: 1;
+        padding-top: 0;
+    }
+    section.main-section .headshoot {
+        margin: 0;
+        padding: 0;
+        scale: 0.8; 
+    }
+    /* .arrow {
+        display: none;
+    } */
 }
 
 @keyframes bounce {
@@ -247,6 +250,7 @@ section.about {
     justify-content: center;
     align-items: center;
     background-color: rgba(154, 205, 50, 0.5);
+    padding: 2rem 0 0 0;
 }
 
 section.about .about-cointainer {
@@ -270,11 +274,24 @@ section.about .headshoot {
     
 }
 
+@media screen and (max-width: 1000px) {
+    section.about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section.about .about-cointainer, section.about .headshoot {
+        padding: 2rem 0;
+        width: 80%;
+    }
+}
+
 footer {
     /* background-color: rgba(65, 105, 225, 0.9); */
-    background-color: rgba(255, 0, 0, 0.4);
-    padding: 2rem 3rem;
-    text-align: right;
+    background-color: rgba(255, 0, 0, 0.6);
+    display: flex;
+    justify-content: flex-end;
+    padding: 3.2rem;
     font-weight: lighter;
 }
 
