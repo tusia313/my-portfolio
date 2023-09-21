@@ -1,0 +1,30 @@
+section.contact-section {
+  text-align: center;
+  padding: 12rem;
+  font-size: 1.6em;
+}
+
+section.contact-section p {
+    font-size: initial;
+    font-weight: bold;
+}
+
+section.contact-section a {
+    color: lightgrey;
+    font-size: 1.4em;
+}
+
+@media screen and (max-width: 1000px) {
+    section.contact-section {
+       padding: 12rem 6rem;
+      }
+}
+
+@media screen and (max-width: 600px) {
+    section.contact-section {
+       padding: 12rem 3rem;
+      }
+}
+
+
+
