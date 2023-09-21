@@ -1,14 +1,7 @@
-/* body {
-    background-color: coral !important;
-} */
 
 h1 {
     font-size: 2.5em;
     letter-spacing: 0.2em;
-}
-
-nav .nav-container {
-    background-color: orange;
 }
 
 section.about-me {
@@ -18,22 +11,22 @@ section.about-me {
     font-weight: bold;
 }
 
-.headshoot-about-me {
-    width: 19rem;
-    border-radius: 50%;
-    padding: 2.5rem;
+section.about-me .headshoot-about-me {
+        width: 21rem;
+        border-radius: 50%;
+        padding: 2.2rem;
+    
 }
 
 @media screen and (max-width: 1000px) {
 
     section.about-me {
         text-align: center;
-        padding: 3rem;
-        font-weight: bold;
+        padding: 0;
     }
 
     .headshoot-about-me {
-        padding: 2.5rem 0;
+        padding: 2rem 0 !important;
     }
 }
 

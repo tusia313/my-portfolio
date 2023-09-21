@@ -28,7 +28,7 @@ section.main-section {
     font-size: 1.1em;
 }
 .headshoot {
-    width: 24rem;
+    width: 22rem;
     border-radius: 50%;
     padding: 3rem;
     margin-left: 10vw;
@@ -57,28 +57,22 @@ section.main-section .introduction {
 
 }
 @media screen and (max-width: 1000px) {
-    .main-section {
+    section.main-section {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding-bottom: 12rem;
+        height: auto;
     }
 
     section.main-section .introduction {
         border-left: none;
         text-align: center;
         width: 90vw;
-        z-index: 1;
-        padding-top: 0;
     }
     section.main-section .headshoot {
         margin: 0;
-        padding: 0;
-        scale: 0.8; 
+        padding: 2.2rem 0;
     }
-    /* .arrow {
-        display: none;
-    } */
 }
 
 @keyframes bounce {
