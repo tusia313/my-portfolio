@@ -14,19 +14,18 @@ section.about-me {
 section.about-me .headshoot-about-me {
         width: 21rem;
         border-radius: 50%;
-        padding: 2.2rem;
-    
+        padding: 2.2rem; 
 }
 
 @media screen and (max-width: 1000px) {
 
     section.about-me {
         text-align: center;
-        padding: 0;
+        padding: 2rem 0.5rem;
     }
 
-    .headshoot-about-me {
-        padding: 2rem 0 !important;
+    section.about-me .headshoot-about-me {
+        padding: 2rem 0;
     }
 }
 
@@ -66,14 +65,17 @@ section a {
 @media (max-width: 600px) {
     table #project {
         min-width: 0;
+     
     }
     
     table #title {
         min-width: 0;
+        
     }
 
     table td {
         text-align: center;
+        padding: 0 0.5rem;
     }
 }
 
