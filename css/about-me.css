@@ -9,6 +9,7 @@ section.about-me {
     padding: 3rem 10rem;
     font-size: 1.2em;
     font-weight: bold;
+    background-color: rgba(173, 216, 230, 1);
 }
 
 section.about-me .headshoot-about-me {
@@ -34,12 +35,13 @@ section.projects {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(240, 128, 128, 0.3);
+    background-color: whitesmoke;
 }
 
 table {
     max-width: 60vw;
     margin-top: 3rem;
+    color: rgba(0, 0, 0, 0.7)
 }
 
 table td {
@@ -49,16 +51,18 @@ table td {
 
 table #project {
     min-width: 12vw;
+    letter-spacing: 0.1em;
 }
 
 table #title {
     min-width: 15vw;
+    letter-spacing: 0.1em;
 }
 
 section a {
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgb(236, 234, 234);
+    color: lightslategray;
     font-weight: bold;
 }
 
